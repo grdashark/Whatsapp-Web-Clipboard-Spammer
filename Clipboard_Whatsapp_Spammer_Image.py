@@ -28,16 +28,11 @@ def send_to_clipboard(image):
 
 def start():
     global count, clipboard_image
-    count += 1
-
-    if count < 2:
-        clipboard_image = ImageGrab.grabclipboard().convert('RGB')
-        clipboard_image.save("original_clip_image.png")
 
     if clipboard_image:
         random_contrast = random.uniform(1, 10.5)
 
-        enhancer = ImageEnhance.Contrast(Image.open("clipboard_img.png"))
+        enhancer = ImageEnhance.Contrast(Image.open("../clipboard_img.png"))
         new_image = enhancer.enhance(random_contrast)
 
         new_image.save("random_contrast_modified_image.jpg")
@@ -55,6 +50,10 @@ while True:
     if keyboard.is_pressed(start_bind):
         print("Sending images...")
         while True:
+            count += 1
+            if count < 2:
+                clipboard_image = ImageGrab.grabclipboard().convert('RGB')
+                clipboard_image.save("original_clip_image.png")
             if keyboard.is_pressed("d"):
                 keyboard.release("ctrl")
                 print("-"*42+f"\n{count} Images with a random hue has been copied and pasted.\n"+"-"*42)
