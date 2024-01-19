@@ -27,12 +27,13 @@ def send_to_clipboard(image):
 
 
 def start():
-    global count, clipboard_image
+    global clipboard_image
+
 
     if clipboard_image:
         random_contrast = random.uniform(1, 10.5)
 
-        enhancer = ImageEnhance.Contrast(Image.open("../clipboard_img.png"))
+        enhancer = ImageEnhance.Contrast(Image.open("original_clip_image.png"))
         new_image = enhancer.enhance(random_contrast)
 
         new_image.save("random_contrast_modified_image.jpg")
@@ -43,7 +44,7 @@ def start():
         pyautogui.click()
 
     else:
-        print("No image data found in clipboard.")
+        exit("No image data found in clipboard.")
 
 
 while True:
@@ -52,8 +53,11 @@ while True:
         while True:
             count += 1
             if count < 2:
-                clipboard_image = ImageGrab.grabclipboard().convert('RGB')
-                clipboard_image.save("original_clip_image.png")
+                try: 
+                         clipboard_image = ImageGrab.grabclipboard().convert('RGB')
+                         clipboard_image.save("original_clip_image.png")
+                except: print("Copy an image, not text!")
+
             if keyboard.is_pressed("d"):
                 keyboard.release("ctrl")
                 print("-"*42+f"\n{count} Images with a random hue has been copied and pasted.\n"+"-"*42)
