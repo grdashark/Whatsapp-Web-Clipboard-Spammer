@@ -26,8 +26,8 @@ automatically send when it reaches 100 images!
 ENJOY THE TOOL!
 
 ## INSTALL
-1. Unzip the file
-2. Open up a terminal and go to the file location of the unzipped file
+1. Unzip the folder
+2. Open up a terminal and go to the file location of the unzipped folder
 3. pip3 install -r requirements.txt
 4. python Clipboard_Image_Spammer.py
 5. Voila!
