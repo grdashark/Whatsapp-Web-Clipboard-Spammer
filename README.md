@@ -10,20 +10,20 @@ The file to open is "Clipboard_Image_Spammer.py"
 Make sure to extract the .zip file before running as 
 it might not work!
 
-HOW DO YOU USE THE TOOL FOR WHATSAPP!??
+## HOW DO YOU USE THE TOOL!??
 
 Firstly, go to your web WhatsApp on your preferred browser 
 (web.whatsapp.com), log in, and run the Python file. Copy the
-image that you want to spam with different hues to copy and paste.
+image that you want to spam with different hues.
 When you have done this, highlight your mouse onto the mic button/send 
 button, and then press "ctrl-alt-shift-x" to start the tool. It will 
-automatically send when it reaches 100 images!
+automatically send 100 images at a time.
 
 # IMPORTANT
 
 
 ## **MAKE SURE TO REMEMBER TO STOP THE TOOL HOLD DOWN THE KEY "D" OR YOU WILL BE STUCK WITH AN IMAGE SPAMMER!**
-ENJOY THE TOOL!
+YOU ALSO NEED TO MAKE SURE THAT YOU COPY THE IMAGE BEFORE YOU START THE SCRIPT!
 
 ## INSTALL
 1. Unzip the folder
