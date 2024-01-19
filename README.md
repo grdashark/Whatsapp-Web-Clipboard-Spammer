@@ -26,10 +26,12 @@ automatically send when it reaches 100 images!
 ENJOY THE TOOL!
 
 ## INSTALL
+1. Unzip the file
+2. Open up a terminal and go to the file location of the unzipped file
+3. pip3 install -r requirements.txt
+4. python Clipboard_Image_Spammer.py
+5. Voila!
 
-pip3 install -r requirements.txt 
-(YOU MUST HAVE PYTHON3 INSTALLED!)
-python Clipboard_Image_Spammer.py
 
 Just a reminder that this tool is used STRICTLY for educational purposes!! I am not responsible for any legal rights or something
 that has been caused by this tool, NOR am I responsible for a possible WhatsApp ban!
